@@ -1,0 +1,62 @@
+/* defaults */
+
+nav,
+header,
+footer{
+ display: block;
+}
+
+body{
+ line-height: 1;
+ margin: 0;
+}
+
+/* nav bar */
+
+nav{
+ width: 100%; 
+ /* to take 100% of screen */
+ margin: 0;
+ padding: 0;
+}
+
+nav ul{
+ background: #eee;
+ overflow: hidden; /* to make show no scrolling */
+ margin: 0;
+ padding: 0;
+}
+
+ul.topnav li{
+ list-style: none; /* to make sure no bullets are inserted*/
+ float: left;
+}
+
+ul.topnav li.topnav-right{
+ float: right;
+}
+
+ul.topnav li a{
+ display: block;
+ text-decoration: none;
+ min-height: 20px; /*minimum font height, better to use instead of font size*/
+ text-align: center;
+ padding: 10px;
+ text-transform: uppercase;
+ color: #666;
+}
+
+ul.topnav li a:hover{
+ color: white ;
+ background: #0080ff;
+}
+
+ul.topnav li.dropdown{
+ display: none;
+}
+
+/* mobile */
+@media screen and (max-width: 680px) {
+ ul.topnav li:not(:nth-child(1)){display: none;}
+ 
+ }
